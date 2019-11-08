@@ -1,3 +1,5 @@
+var expect  = require('chai').expect;
+var request = require('request');
 const express = require('express');
 const expressValidator = require('express-validator');
 // create express app
@@ -65,3 +67,4 @@ mongoose.connect(config.url, {
 server.listen(config.port, () => {
     console.log("Server is listening on port 3000");
 });
+module.exports=server
